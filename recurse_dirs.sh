@@ -19,12 +19,12 @@ recurse() {
  done
 }
 
-# function to list only filenames without path
+# function to list only filenames, strip path with sed
 file_remove_paths() {
 grep file | sed 's/.*\///'
 }
 
-# function to list only the directories without path
+# function to list only the directories, strip path with sed
 dir_remove_paths() {
 grep dir | sed 's/.*\///'
 }
